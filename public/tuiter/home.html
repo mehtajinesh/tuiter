@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        create the Home screen for users to view tuit posts and create new posts as shown down below. Like most screens, add a Back link to navigate back to the previous screen, navigation.html in this case. Below the link add an h1 Tuiter header and an h2 Home header below that. Below the headers add a 48 by 48 pixel image representing the owner of the account. Use an image of your choice. Add a textarea element for users to post new tuits. The textarea should have a placeholder that says "What's happening?". Add a dropdown with options "Everyone can reply", "People you follow", and "Only people you mention", with values "EVERYONE", "FOLLOWING", and "MENTIONED" respectively. Default value should be "EVERYONE". Add a button to upload an image and another button labeled "Tuit" to create a new tuit.
+    
+        Use an unordered list ul to create a couple of tuits as line item elements li as bullet points. As the header of the tuit, add a hyperlink referencing topic.html labeled Topic 123. Add a 48 by 48 pixel image, a link referencing profile.html labeled Alice, add a handle @alice, and a time stamp of 2 hours as shown on the right. Below the tuit's header add a paragraph with dummy content as shown. Below the tuit, add Reply, Retuit, Like, and Share links linked to reply.html, retuit.html, like.html, and share.html respectively. Include count values 123, 234, and 345.
+    -->
+    <body>
+        <a href="navigation.html">Back</a>
+        <h1>Tuiter</h1>
+        <h2>Home</h2>
+        <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5OTk2ODUyMTMxNzM0ODcy/gettyimages-1229892983-square.jpg" alt="Profile Picture" height="48" width="48">
+        <br>       
+        <textarea placeholder="What's happening?"></textarea>
+        <br>        
+        <select>
+            <option value="EVERYONE">Everyone can reply</option>
+            <option value="FOLLOWING">People you Follow</option>
+            <option value="MENTIONED">Only people you mention</option>
+        </select>
+        <br>
+        <hr>
+        <input type="file" name="image" id="image">
+        <button>Tuit</button>
+        <hr>
+        <br>
+        <ul>
+            <li style="margin: 10px 0;">
+                <a href="topic.html">Tesla</a>
+                <br>
+                <img src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/12f213e1-t1.jpg" alt="Profile Picture" height="48" width="48">
+                <a href="profile.html">Alpha</a>
+                <label>@alphaX - 2 hours ago</label>
+                <p>Tesla, Inc. is an American electric vehicle and clean energy company based in Austin, Texas, United States. Tesla designs and manufactures electric cars, battery energy storage from home to grid-scale, solar panels and solar roof tiles, and related products and services.
+                </p>
+                <a href="reply.html">Reply</a>
+                <label>123 |</label>
+                <a href="retuit.html">Retuit</a>
+                <label>234 |</label>
+                <a href="like.html">Like</a>
+                <label>345 |</label>
+                <a href="share.html">Share</a>
+            </li>
+            <li>
+                <a href="topic.html">Paypal</a>
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3-JI01O5dj07Wf2LbD6O56ES041H3nr93Gg&usqp=CAU" alt="Profile Picture" height="48" width="48">
+                <a href="profile.html">Beta</a>
+                <label>@betaX - 4 hours ago</label>
+                <p>TPayPal Holdings, Inc. is an American multinational financial technology company operating an online payments system in the majority of countries that support online money transfers, and serves as an electronic alternative to traditional paper methods such as checks and money orders.
+                </p>
+                <a href="reply.html">Reply</a>
+                <label>456 |</label>
+                <a href="retuit.html">Retuit</a>
+                <label>567 |</label>
+                <a href="like.html">Like</a>
+                <label>789 |</label>
+                <a href="share.html">Share</a>
+            </li>
+        </ul>
+    </body>
+</html>
