@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        Add a Back button at the top navigating to the previous screen. Below the Back link, add an h1 Tuiter header and an h2 Edit Profile header below that. Below the headers add a Save link referencing profile.html. Then add a 200 pixel high by 100% wide banner image below the Save link. Use an image of your choice. Below the image add a file input field that could be used in the future to update the banner image. Then add a 48 x 48 pixel avatar image. Use an image of your choice. Below the avatar image add a file input field that could be used in the future to update the avatar image. Add a ruler tag to separate the content vertically. Below the ruler add a Name label associated to an input field that in the future could be used to edit the name of the user. The field should have WebDev as the devault value and Name as the placeholder. If you click on the label, the input field should get focus. Add a ruler tag to separate the content vertically. Below the ruler tag, add a Bio label associated to a textarea that in the future could be used to edit the user's bio information. The default bio value should be the  dummy Lorem ipsum text shown. Find an example text at lipsum.com. The textarea should be 50 columns wide by 10 rows high.
+    -->
+    <a href="navigation.html">Back</a>
+        <h1>Tuiter</h1>
+        <h2>Edit Profile</h2>
+        <a href="profile.html">Save</a>
+        <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg" alt="Background Picture" height="200" width="100%">
+        <br>
+        <input type="file" name="banner-image">
+        <br>
+        <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5OTk2ODUyMTMxNzM0ODcy/gettyimages-1229892983-square.jpg" alt="Profile Picture" height="48" width="48">
+        <br>
+        <input type="file" name="avatar-image">
+        <hr>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="name" value="WebDev" placeholder="Name">
+        <hr>
+        <label for="bio">Bio</label>
+        <br>
+        <textarea name="bio" cols="50" rows="10">Entrepreneur. Founder, CEO, and Chief Engineer at SpaceX; Early-stage investor, CEO, and Product Architect of Tesla, Inc.; Founder of The Boring Company; and Co-founder of Neuralink and OpenAI.
+        </textarea>
+</html>
