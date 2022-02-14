@@ -1,0 +1,156 @@
+.wd-bookmarks{
+    background-color: black;
+    margin-top: 0px;
+}
+
+.wd-grid-col-left-sidebar {
+    width: 20%;
+    float: left;
+}
+
+.wd-grid-col-main-content {
+    width: 60%;
+    margin-left: 16px;
+    float: left;
+    border-left: 1px solid rgb(47,51,54);
+    border-right: 1px solid rgb(47,51,54);
+}
+
+.wd-grid-col-right-sidebar {
+    width: 20%;
+    float: left;
+}
+
+/* Clear the formatting for next divs */
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-horizontal-align{
+    display: flex;
+}
+
+.wd-vertical-align{
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-bookmarks-item-top-left-margin{
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.wd-bookmarks-header-bottom-margin, .wd-post-information-container-bottom-margin, .wd-addition-image-text-container-bottom-margin{ 
+    margin-bottom: 12px;
+}
+
+.wd-bookmarks-title{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-bookmarks-handle{
+    color:lightgray;
+    font-size: 13px;
+}
+
+.wd-bookmarks-header-bottom-border, .wd-bookmarks-post-bottom-border{
+    border-bottom: 1px solid lightgray;
+}
+
+.wd-image-container {
+    width: 48px;
+    float: left;
+}
+.wd-post-content-container {
+    width: 80%;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.wd-avatar-container {
+    object-fit: cover;
+    border-radius:24px;
+    width: 48px;
+    height: 48px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.wd-author-name, .wd-addition-image-text-title-container{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-author-handle, .wd-date, .wd-addition-image-text-other-container{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-post-information-container {
+    color: white;
+    font-size: 15px;
+    width: 506px;
+}
+
+.wd-post-addition-image-container{
+    margin-bottom: -4px;
+}
+
+.wd-addition-image{
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wd-addition-image-text-container{
+    border: 1px solid lightgray;
+    padding: 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.wd-four-icons-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-four-icons-item-left-margin{
+    margin-left: 12px;
+}
+
+.wd-icon-image{
+    width: 24px;
+    height: 24px;
+}
+
+.wd-icon-active{
+    color: red;
+}
+
+.wd-icon-active-svg{
+    fill: red;
+}
+
+.wd-icon-non-active{
+    color: lightgray;
+}
+
+.wd-icon-non-active-svg{
+    fill: lightgray;
+}
+
+.wd-icon-text-hyperlink{
+    text-decoration: none;
+}
+
+.wd-four-icons-item{
+    display: flex;
+}

@@ -29,15 +29,6 @@
     flex-direction: column;
 }
 
-.wd-icon{
-    width: 20px;
-    height: 20px;
-}
-
-.wd-vertical-align-item-padding{
-    padding:16px;
-}
-
 .wd-center-borders{
     border-left: 1px solid rgb(47,51,54);
     border-right: 1px solid rgb(47,51,54);
@@ -45,6 +36,15 @@
 
 .wd-horizontal-align{
     display: flex;
+}
+
+.wd-vertical-align-item-padding{
+    padding:16px;
+}
+
+.wd-icon{
+    width: 20px;
+    height: 20px;
 }
 
 .wd-search-box{
