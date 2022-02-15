@@ -308,4 +308,60 @@
     flex-basis: 100%;
 }
 
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
 
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    h3 {
+        background-color: green;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    div {
+        background-color: pink;
+        font-size: 10px;
+    }
+    .media-query {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    p {
+        background-color: purple;
+    }
+    .media-query {
+        border: 10px solid black;
+        color: green;
+    }
+}
