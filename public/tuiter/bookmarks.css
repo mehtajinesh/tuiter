@@ -154,3 +154,9 @@ img {
 .wd-four-icons-item{
     display: flex;
 }
+
+.wd-sticky-header{
+    position: sticky;
+    top:0;
+    background-color: black;
+}

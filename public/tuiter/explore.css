@@ -197,3 +197,9 @@ img {
     font-size: 13px;
     color: lightgray;
 }
+
+.wd-sticky-header{
+    position: sticky;
+    top:0;
+    background-color: black;
+}
