@@ -19,48 +19,60 @@
     ></script>
     <link rel="stylesheet" href="explore.css" />
   </head>
-  <body>
+  <body class="bg-black">
     <!--
  Tuiter's explore screen displays a list of random tuits organized into several categories accessible by tabs. The screen, as most Tuiter screens we'll work on, have three columns. The column on the left is a navigation sidebar with links to various screens throughout Tuiter. The column in the middle contains the main content, and the column on the right is another side bar with links to other users you might want to follow.
 -->
-    <div class="container">
+    <div class="container bg-black">
       <div class="row m-2 justify-content-around">
         <!-- Left Side of the main screen-->
-        <div class="col-2 col-lg-1 col-xl-2 d-block">
+        <div class="col-2 col-lg-1 col-xl-2 d-block bg-black">
           <div class="d-flex flex-column">
             <div class="list-group">
-              <a href="navigation.html" class="list-group-item">
-                <i class="fa-brands fa-twitter"></i>
+              <a
+                href="navigation.html"
+                class="list-group-item bg-black text-light"
+              >
+                <i class="fa-brands fa-twitter fa-inverse"></i>
               </a>
-              <a href="home.html" class="list-group-item fw-bold">
-                <i class="fa-solid fa-house-chimney"></i>
+              <a href="home.html" class="list-group-item bg-black text-light">
+                <i class="fa-solid fa-house-chimney fa-inverse"></i>
                 <span class="d-none d-xl-inline">Home</span>
               </a>
-              <a href="explore.html" class="list-group-item fw-bold active">
-                <i class="fa-solid fa-hashtag"></i>
+              <a
+                href="explore.html"
+                class="list-group-item bg-black text-light fw-bold"
+              >
+                <i class="fa-solid fa-hashtag fa-inverse"></i>
                 <span class="d-none d-xl-inline">Explore</span>
               </a>
-              <a href="notifications.html" class="list-group-item fw-bold"
-                ><i class="fa-solid fa-bell"></i>
+              <a
+                href="notifications.html"
+                class="list-group-item bg-black text-light"
+                ><i class="fa-solid fa-bell fa-inverse"></i>
                 <span class="d-none d-xl-inline">Notifications</span></a
               >
-              <a href="messages.html" class="list-group-item fw-bold"
-                ><i class="fa-solid fa-envelope"></i>
+              <a
+                href="messages.html"
+                class="list-group-item bg-black text-light"
+                ><i class="fa-solid fa-envelope fa-inverse"></i>
                 <span class="d-none d-xl-inline">Messages</span></a
               >
-              <a href="bookmarks.html" class="list-group-item fw-bold"
-                ><i class="fa-solid fa-bookmark"></i>
+              <a
+                href="bookmarks.html"
+                class="list-group-item bg-black text-light"
+                ><i class="fa-solid fa-bookmark fa-inverse"></i>
                 <span class="d-none d-xl-inline">Bookmarks</span></a
               >
-              <a href="lists.html" class="list-group-item fw-bold"
-                ><i class="fa-solid fa-list"></i>
+              <a href="lists.html" class="list-group-item bg-black text-light"
+                ><i class="fa-solid fa-list fa-inverse"></i>
                 <span class="d-none d-xl-inline">Lists</span></a
               >
-              <a href="profile.html" class="list-group-item fw-bold"
-                ><i class="fa-solid fa-user"></i>
+              <a href="profile.html" class="list-group-item bg-black text-light"
+                ><i class="fa-solid fa-user fa-inverse"></i>
                 <span class="d-none d-xl-inline">Profile</span>
               </a>
-              <a href="more.html" class="list-group-item fw-bold">
+              <a href="more.html" class="list-group-item bg-black text-light">
                 <span class="">
                   <img src="./icons/ellipsis.svg" />
                 </span>
@@ -69,62 +81,68 @@
             </div>
             <button
               type="button"
-              class="mt-2 btn rounded-pill btn-primary wd-override-bs"
+              class="mt-2 btn rounded-pill wd-tweet-button-background-color fw-bold text-white wd-override-bs"
             >
               Tweet
             </button>
           </div>
         </div>
         <!-- Main Content of the screen-->
-        <div class="col-6 col-lg-7 col-xl-6 d-block flex-grow-1">
-          <div class="d-flex flex-column">
+        <div class="col-6 col-lg-7 col-xl-6 d-block flex-grow-1 bg-black">
+          <div class="d-flex flex-column border-top-0 wd-gray-border">
             <!-- Search Row-->
             <div class="d-flex">
               <!-- Search Box-->
-              <div class="input-group me-5">
+              <div class="ms-2 input-group me-5">
                 <span
-                  class="input-group-text bg-transparent wd-border-top-left-rounded-pill wd-border-bottom-left-rounded-pill"
+                  class="input-group-text wd-search-box-background-color wd-border-top-left-rounded-pill wd-border-bottom-left-rounded-pill wd-gray-border"
                   ><label
-                    class="fa-solid fa-magnifying-glass"
+                    class="fa-solid fa-magnifying-glass fa-inverse wd-search-box-background-color"
                     for="searchTuiter"
                   ></label
                 ></span>
                 <input
                   type="text"
                   id="searchTuiter"
-                  class="shadow-none form-control wd-border-top-right-rounded-pill wd-border-bottom-right-rounded-pill wd-hide-border-start"
+                  class="shadow-none form-control wd-border-top-right-rounded-pill wd-border-bottom-right-rounded-pill wd-hide-border-start wd-search-box-background-color text-white wd-gray-border"
                   placeholder="Search Tuiter"
                 />
               </div>
               <!-- Explore Settings Icon-->
-              <div class="ms-auto my-auto">
+              <div class="ms-auto my-auto me-2">
                 <a href="explore-settings.html">
-                  <i class="fa-solid fa-cog fa-xl"></i>
+                  <i class="fa-solid fa-cog fa-xl fa-inverse"></i>
                 </a>
               </div>
             </div>
             <!-- Explore Tabs-->
             <div class="mt-2">
-              <ul class="nav nav-tabs">
+              <ul class="nav nav-tabs border-0">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">For you</a>
+                  <a class="nav-link bg-black text-secondary" href="#"
+                    >For you</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Trending</a>
+                  <a class="nav-link bg-black text-secondary" href="#"
+                    >Trending</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">News</a>
+                  <a class="nav-link bg-black text-secondary" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sports</a>
+                  <a class="nav-link bg-black text-secondary" href="#"
+                    >Sports</a
+                  >
                 </li>
-                <li class="nav-item d-none d-md-block">
-                  <a class="nav-link" href="#">Entertainment</a>
+                <li class="nav-item active d-none d-md-block">
+                  <a class="nav-link text-white" href="#">Entertainment</a>
                 </li>
               </ul>
             </div>
             <!-- FrontPage Image-->
-            <div class="mt-2">
+            <div class="border-top-0 wd-gray-border">
               <div class="card text-white border-0">
                 <img
                   src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
@@ -140,16 +158,16 @@
               </div>
             </div>
             <!-- Post -->
-            <div class="row g-0 p-2 border border-top-0">
+            <div class="row g-0 p-2 border-top-0 wd-gray-border">
               <!-- Post Text Data-->
               <div class="col flex-column">
                 <div class="text-secondary small">Web Development</div>
                 <div class="d-flex">
-                  <div class="fw-bold">ReactJS &nbsp;</div>
-                  <div><i class="fa-solid fa-circle-check"></i></div>
+                  <div class="fw-bold text-white">ReactJS &nbsp;</div>
+                  <div><i class="fa-solid fa-circle-check fa-inverse"></i></div>
                   <div class="small text-secondary">&nbsp;-&nbsp;2h</div>
                 </div>
-                <div class="fw-bold">
+                <div class="fw-bold text-white">
                   React.js is a component based front end library that makes it
                   very easy to build single page applications.
                 </div>
@@ -161,15 +179,15 @@
               />
             </div>
             <!-- Post -->
-            <div class="row g-0 p-2 border border-top-0">
+            <div class="row g-0 p-2 border-top-0 wd-gray-border">
               <!-- Post Text Data-->
               <div class="col flex-column">
                 <div class="d-flex">
-                  <div class="fw-bold">Javascript &nbsp;</div>
-                  <div><i class="fa-solid fa-circle-check"></i></div>
+                  <div class="fw-bold text-white">Javascript &nbsp;</div>
+                  <div><i class="fa-solid fa-circle-check fa-inverse"></i></div>
                   <div class="small text-secondary">&nbsp;-&nbsp;2h</div>
                 </div>
-                <div class="fw-bold">
+                <div class="fw-bold text-white">
                   Javascript is a programming language that can run on browsers
                   as well as desktops
                 </div>
@@ -182,12 +200,12 @@
               />
             </div>
             <!-- Post -->
-            <div class="row g-0 p-2 border border-top-0">
+            <div class="row g-0 p-2 border-top-0 wd-gray-border">
               <!-- Post Text Data-->
               <div class="col flex-column">
                 <div class="text-secondary small">Web Development</div>
                 <div class="d-flex">
-                  <div class="fw-bold">jQuery &nbsp;</div>
+                  <div class="fw-bold text-white">jQuery &nbsp;</div>
                 </div>
                 <div class="text-secondary small">123K Tweets</div>
               </div>
@@ -198,13 +216,13 @@
               />
             </div>
             <!-- Post -->
-            <div class="row g-0 p-2 border border-top-0">
+            <div class="row g-0 p-2 border-top-0 wd-gray-border">
               <!-- Post Text Data-->
               <div class="col flex-column">
                 <div class="text-secondary small">Web Development</div>
                 <div class="d-flex">
-                  <div class="fw-bold">NodeJS &nbsp;</div>
-                  <div><i class="fa-solid fa-circle-check"></i></div>
+                  <div class="fw-bold text-white">NodeJS &nbsp;</div>
+                  <div><i class="fa-solid fa-circle-check fa-inverse"></i></div>
                   <div class="small text-secondary">&nbsp;-&nbsp;2h</div>
                 </div>
                 <div class="text-secondary small">123K Tweets</div>
@@ -218,11 +236,17 @@
           </div>
         </div>
         <!-- Right Side of the main screen-->
-        <div class="col-4 d-none d-lg-block">
+        <div class="col-4 d-none d-lg-block bg-black">
           <div class="list-group">
-            <div class="list-group-item fw-bold">Who to follow</div>
+            <div
+              class="list-group-item wd-follow-background-color text-light fw-bold"
+            >
+              Who to follow
+            </div>
             <!-- Java follow-->
-            <div class="list-group-item p-1">
+            <div
+              class="list-group-item wd-follow-background-color text-light p-1"
+            >
               <div class="row g-0">
                 <div class="col-2 pe-2">
                   <img
@@ -233,19 +257,23 @@
                 <div class="col d-flex flex-column me-auto">
                   <div class="d-flex">
                     <div class="fw-bold small">Java &nbsp;</div>
-                    <div><i class="fa-solid fa-circle-check"></i></div>
+                    <div>
+                      <i class="fa-solid fa-circle-check fa-inverse"></i>
+                    </div>
                   </div>
-                  <div class="small">@Java</div>
+                  <div class="small text-secondary">@Java</div>
                 </div>
                 <div class="col-3 my-auto">
-                  <button class="btn btn-primary fw-bold rounded-pill">
+                  <button class="btn btn-light fw-bold rounded-pill">
                     Follow
                   </button>
                 </div>
               </div>
             </div>
             <!-- Relativity Space follow-->
-            <div class="list-group-item p-1">
+            <div
+              class="list-group-item wd-follow-background-color text-light p-1"
+            >
               <div class="row g-0">
                 <div class="col-2 pe-2">
                   <img
@@ -256,20 +284,24 @@
                 <div class="col d-flex flex-column me-auto">
                   <div class="d-flex">
                     <div class="fw-bold small">Relativity Space &nbsp;</div>
-                    <div><i class="fa-solid fa-circle-check"></i></div>
+                    <div>
+                      <i class="fa-solid fa-circle-check fa-inverse"></i>
+                    </div>
                   </div>
-                  <div class="small">@relativityspace</div>
+                  <div class="small text-secondary">@relativityspace</div>
                 </div>
 
                 <div class="col-3 my-auto">
-                  <button class="btn btn-primary fw-bold rounded-pill">
+                  <button class="btn btn-light fw-bold rounded-pill">
                     Follow
                   </button>
                 </div>
               </div>
             </div>
             <!-- Virgin Galactic follow-->
-            <div class="list-group-item p-1">
+            <div
+              class="list-group-item wd-follow-background-color text-light p-1"
+            >
               <div class="row g-0">
                 <div class="col-2 pe-2">
                   <img
@@ -280,20 +312,24 @@
                 <div class="col d-flex flex-column me-auto">
                   <div class="d-flex">
                     <div class="fw-bold small">Virgin Galactic &nbsp;</div>
-                    <div><i class="fa-solid fa-circle-check"></i></div>
+                    <div>
+                      <i class="fa-solid fa-circle-check fa-inverse"></i>
+                    </div>
                   </div>
-                  <div class="small">@virgingalactic</div>
+                  <div class="small text-secondary">@virgingalactic</div>
                 </div>
 
                 <div class="col-3 my-auto">
-                  <button class="btn btn-primary fw-bold rounded-pill">
+                  <button class="btn btn-light fw-bold rounded-pill">
                     Follow
                   </button>
                 </div>
               </div>
             </div>
             <!-- Nasa Follow-->
-            <div class="list-group-item p-1">
+            <div
+              class="list-group-item wd-follow-background-color text-light p-1"
+            >
               <div class="row g-0">
                 <div class="col-2 pe-2">
                   <img
@@ -304,19 +340,23 @@
                 <div class="col d-flex flex-column me-auto">
                   <div class="d-flex">
                     <div class="fw-bold small">Nasa &nbsp;</div>
-                    <div><i class="fa-solid fa-circle-check"></i></div>
+                    <div>
+                      <i class="fa-solid fa-circle-check fa-inverse"></i>
+                    </div>
                   </div>
-                  <div class="small">@nasa</div>
+                  <div class="small text-secondary">@nasa</div>
                 </div>
                 <div class="col-3 my-auto">
-                  <button class="btn btn-primary fw-bold rounded-pill">
+                  <button class="btn btn-light fw-bold rounded-pill">
                     Follow
                   </button>
                 </div>
               </div>
             </div>
             <!-- Tesla Motors Follow-->
-            <div class="list-group-item p-1">
+            <div
+              class="list-group-item wd-follow-background-color text-light p-1"
+            >
               <div class="row g-0">
                 <div class="col-2 pe-2">
                   <img
@@ -327,12 +367,14 @@
                 <div class="col d-flex flex-column me-auto">
                   <div class="d-flex">
                     <div class="fw-bold small">Tesla &nbsp;</div>
-                    <div><i class="fa-solid fa-circle-check"></i></div>
+                    <div>
+                      <i class="fa-solid fa-circle-check fa-inverse"></i>
+                    </div>
                   </div>
-                  <div class="small">@tesla</div>
+                  <div class="small text-secondary">@tesla</div>
                 </div>
                 <div class="col-3 my-auto">
-                  <button class="btn btn-primary fw-bold rounded-pill">
+                  <button class="btn btn-light fw-bold rounded-pill">
                     Follow
                   </button>
                 </div>
