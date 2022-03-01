@@ -1,14 +1,14 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active_page) => {
     return(`
             <div class="list-group">
                 <a class="list-group-item" href="/">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a class="list-group-item fw-bold" href="home.html">
+                <a class="list-group-item fw-bold ${active_page === 'Home' ? "active" : ""}" href="./../HomeScreen/home.html">
                     <i class="fa-solid fa-house-chimney"></i>
                     <span class="d-none d-xl-inline">Home</span>
                 </a>
-                <a class="list-group-item fw-bold active" href="explore.html">
+                <a class="list-group-item fw-bold ${active_page === 'Explore' ? "active" : ""}" href="./../ExploreScreen/explore.html">
                     <i class="fa-solid fa-hashtag"></i>
                     <span class="d-none d-xl-inline">Explore</span>
                 </a>

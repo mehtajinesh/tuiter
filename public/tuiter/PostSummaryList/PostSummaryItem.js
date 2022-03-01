@@ -13,10 +13,12 @@ const PostSummaryItem = ({topic,userName,title,time,image}) => {
                 <div class="fw-bold">`+title+`</div>
             </div>
         <!-- Post Icon Data-->
-            <img
-            src="`+image+`"
-            class="col-2 img-fluid rounded"
-            />
+            <div class="col-2 my-auto d-flex justify-content-end">
+                <img
+                src="`+image+`"
+                class="img-fluid rounded"
+                />
+            </div>
         </div>
     </div>
 `); }
