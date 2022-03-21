@@ -1,0 +1,36 @@
+.wd-background-transparent {
+  background: transparent;
+}
+
+.wd-border-top-left-rounded-pill{
+  border-top-left-radius: 20px;
+}
+
+.wd-border-bottom-left-rounded-pill{
+  border-bottom-left-radius: 20px;
+}
+
+.wd-border-top-right-rounded-pill{
+  border-top-right-radius: 20px;
+}
+
+.wd-border-bottom-right-rounded-pill{
+  border-bottom-right-radius: 20px;
+}
+
+.wd-hide-border-start{
+  border-left: 0px;
+}
+
+@media (max-width: 1199.98px) {
+  .btn-primary.wd-override-bs {
+      font-size: 10px;
+  }
+}
+
+input[type=text]:focus {
+  border-top: 1px solid rgb(206,212,217);
+  border-bottom: 1px solid rgb(206,212,217);
+  border-right: 1px solid rgb(206,212,217);
+  border-left: none;
+}
