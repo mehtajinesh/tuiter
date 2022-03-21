@@ -3,15 +3,15 @@ import who from "./who.json";
 
 const WhoToFollowList = () => {
     return (
-        <div>
+        <ul className="list-group">
             {
                 who.map(who => {
                     return(
-                        <WhoToFollowListItem who={who}/>
+                            <WhoToFollowListItem who={who}/>
                     );
                 })
             }
-        </div>
+        </ul>
     );
 };
 
