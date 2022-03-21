@@ -4,9 +4,10 @@ import "./vendors/bootstrap/css/cyborg.bootstrap.min.css";
 import "./vendors/fontawesome/css/all.min.css";
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/Labs";
-import Tuiter from "./components/Tuiter";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Todo from "./components/Labs/todo";
+import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
+import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <Routes>
           <Route exact path="/hello" element={<HelloWorld />} />
           <Route exact path="/" element={<Labs />} />
-            <Route exact path="/tuiter" element={<Tuiter />} />
-            <Route exact path="/todo" element={<Todo />} />
+          <Route exact path="/tuiter/home" element={<HomeScreen/>}/>
+          <Route exact path="/tuiter/explore" element={<ExploreScreen/>}/>
+          <Route exact path="/todo" element={<Todo />} />
         </Routes>
       </div>
     </BrowserRouter>
