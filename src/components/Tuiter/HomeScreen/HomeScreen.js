@@ -2,7 +2,7 @@ import NavigationSidebar from "./../NavigationSidebar";
 import PostList from "./../PostList/PostList";
 import PostSummaryList from "./../PostSummaryList/PostSummaryList";
 import React from "react";
-
+import "./home.css"
 const HomeScreen = () => {
     return(
         <div className="row mt-2">
