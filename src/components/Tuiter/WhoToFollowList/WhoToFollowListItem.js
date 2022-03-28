@@ -1,6 +1,6 @@
 const WhoToFollowListItem = ({
     who = {
-        avatarIcon: 'public/images/nasa.svg',
+        avatarIcon: './../images/nasa.svg',
         userName: 'NASA',
         handle: 'NASA'
     }

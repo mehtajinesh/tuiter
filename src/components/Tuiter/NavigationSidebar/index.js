@@ -1,19 +1,22 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import { useLocation } from 'react-router-dom'
 
-const NavigationSidebar = ({active = 'explore'}) => {
+const NavigationSidebar = () => {
+    const location = useLocation();
+    const activeTab = location.pathname === '/tuiter/explore'?'explore':'home';
     return (
         <div>
             <div className="list-group">
                 <Link className="list-group-item" to="/">
                     <i className="fab fa-twitter"/>
                 </Link>
-                <Link className={`list-group-item fw-bold ${active === 'home' ? 'active' : ''}`}
+                <Link className={`list-group-item fw-bold ${activeTab === 'home' ? 'active' : ''}`}
                    to="/tuiter/home">
                     <i className="fa-solid fa-house-chimney"/>
                     <span className="d-none d-xl-inline">Home</span>
                 </Link>
-                <Link className={`list-group-item fw-bold ${active === 'explore' ? 'active' : ''}`}
+                <Link className={`list-group-item fw-bold ${activeTab === 'explore' ? 'active' : ''}`}
                    to="/tuiter/explore">
                     <i className="fa-solid fa-hashtag"/>
                     <span className="d-none d-xl-inline">Explore</span>

@@ -2,7 +2,7 @@ import React from "react";
 import "./explore.css";
 import NavigationSidebar from "./../NavigationSidebar";
 import ExploreComponent from "./ExploreComponent";
-import WhoToFollowList from "./../WhoToFollowList/WhoToFollowList";
+import WhoToFollowList from "./../WhoToFollowList";
 const ExploreScreen = () => {
     return(
         <div className="row mt-2">
