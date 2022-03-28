@@ -1,3 +1,5 @@
+import {useDispatch} from "react-redux";
+import TuitStats from "../TuitStats";
 const TuitListItem = ({key = "123", tuit = {
     "_id": "123",
     "topic": "Web Development",
@@ -19,6 +21,11 @@ const TuitListItem = ({key = "123", tuit = {
         "comments": 123, "retuits": 234, "likes": 345
     }
 }}) => {
+    const dispatch = useDispatch();
+    const deleteTuit = (tuit) => {
+        dispatch({type: 'delete-tuit', tuit})
+    };
+
     return (<div className="list-group-item p-2 bg-black">
         <div className="row g-0">
             <div className="col-1">
@@ -49,11 +56,16 @@ const TuitListItem = ({key = "123", tuit = {
                             <span className="small text-muted ms-2">{tuit.stats.retuits}</span>
                         </div>
                         <div className="d-flex">
-                            <i className="fa-solid fa-heart" style={{color: tuit.liked ? "red":"grey"}}/>
-                            <span className="small text-muted ms-2">{tuit.stats.likes}</span>
+                            <TuitStats tuit={tuit}/>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="col-1">
+                <i onClick={() =>
+                    deleteTuit(tuit)}
+                   className="fas fa-remove
+                  fa-pull-right" />
             </div>
         </div>
     </div>);
