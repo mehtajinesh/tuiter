@@ -1,0 +1,15 @@
+{
+  "firstName": "Elon",
+  "lastName": "Musk",
+  "handle": "elonmusk",
+  "profilePicture": "https://cdn.kqed.org/wp-content/uploads/sites/43/2016/04/ElonMusk-96x96.jpg",
+  "bannerPicture": "https://live.staticflickr.com/65535/48322786667_0de1227145_3k.jpg",
+  "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
+  "website": "youtube.com/webdevtv",
+  "location": "Boston, MA",
+  "dateOfBirth": "1968-07-07",
+  "dateJoined": "4/2009",
+  "followingCount": 312,
+  "followersCount": 180,
+  "tuitCount": "5,196"
+}

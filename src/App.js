@@ -8,6 +8,8 @@ import Labs from "./components/Labs";
 import Todo from "./components/Labs/todo";
 import HomeScreen from "./components/Tuiter/HomeScreen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen";
+import ProfileScreen from "./components/Tuiter/ProfileScreen"
+import EditProfileScreen from "./components/Tuiter/EditProfileScreen"
 import Tuiter from "./components/Tuiter";
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
                         <Route index element={<HomeScreen/>}/>
                         <Route path="home" exact={true} element={<HomeScreen/>}/>
                         <Route path="explore" exact={true} element={<ExploreScreen/>}/>
+                        <Route path="profile" exact={true} element={<ProfileScreen/>}/>
+                        <Route path="editprofile" exact={true} element={<EditProfileScreen/>}/>
                     </Route>
                 </Route>
             </Routes>

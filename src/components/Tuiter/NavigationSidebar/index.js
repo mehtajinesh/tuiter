@@ -4,7 +4,21 @@ import { useLocation } from 'react-router-dom'
 
 const NavigationSidebar = () => {
     const location = useLocation();
-    const activeTab = location.pathname === '/tuiter/explore'?'explore':'home';
+    let activeTab;
+    switch (location.pathname){
+        case '/tuiter/explore':
+            activeTab = 'explore';
+            break;
+        case '/tuiter/home':
+            activeTab = 'home';
+            break;
+        case '/tuiter/profile':
+        case '/tuiter/editprofile':
+            activeTab = 'profile';
+            break;
+        default:
+            activeTab = 'home';
+    }
     return (
         <div>
             <div className="list-group">
@@ -37,10 +51,11 @@ const NavigationSidebar = () => {
                     <i className="fa-solid fa-list"/>
                     <span className="d-none d-xl-inline">Lists</span>
                 </a>
-                <a href="profile.html" className="list-group-item fw-bold">
+                <Link className={`list-group-item fw-bold ${activeTab === 'profile' ? 'active' : ''}`}
+                      to="/tuiter/profile">
                     <i className="fa-solid fa-user"/>
                     <span className="d-none d-xl-inline">Profile</span>
-                </a>
+                </Link>
                 <a href="more.html" className="list-group-item fw-bold">
                     <i className="fa-solid fa-circle"/>
                     <span className="d-none d-xl-inline">More</span>
