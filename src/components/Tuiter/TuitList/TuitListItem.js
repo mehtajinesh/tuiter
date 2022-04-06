@@ -1,5 +1,8 @@
 import {useDispatch} from "react-redux";
-import TuitStats from "../TuitStats";
+import TuitLike from "../TuitLike";
+import TuitDislike from "../TuitDislike";
+import {deleteTuit} from "../../../actions/tuits-actions";
+import React from "react";
 const TuitListItem = ({key = "123", tuit = {
     "_id": "123",
     "topic": "Web Development",
@@ -7,6 +10,7 @@ const TuitListItem = ({key = "123", tuit = {
         "username": "ReactJS"
     },
     "liked": true,
+    "disliked": false,
     "verified": false,
     "handle": "ReactJS",
     "time": "2h",
@@ -18,13 +22,10 @@ const TuitListItem = ({key = "123", tuit = {
     "logoImage": "./../images/reactjs-logo.svg",
     "avatarImage": "./../images/reactjs-logo.svg",
     "stats": {
-        "comments": 123, "retuits": 234, "likes": 345
+        "comments": 123, "retuits": 234, "likes": 345, "disliked":5445
     }
 }}) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
 
     return (<div className="list-group-item p-2 bg-black">
         <div className="row g-0">
@@ -56,14 +57,16 @@ const TuitListItem = ({key = "123", tuit = {
                             <span className="small text-muted ms-2">{tuit.stats.retuits}</span>
                         </div>
                         <div className="d-flex">
-                            <TuitStats tuit={tuit}/>
+                            <TuitLike tuit={tuit}/>
+                        </div>
+                        <div className="d-flex">
+                            <TuitDislike tuit={tuit}/>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="col-1">
-                <i onClick={() =>
-                    deleteTuit(tuit)}
+                <i onClick={() => deleteTuit(dispatch, tuit)}
                    className="fas fa-remove
                   fa-pull-right" />
             </div>
