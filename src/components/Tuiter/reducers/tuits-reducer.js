@@ -37,13 +37,13 @@ const tuitsReducer = (state = [], action) => {
                 logoImage: "./../images/reactjs-logo.svg",
                 avatarImage: "./../images/reactjs-logo.svg",
             }
-            return [newTuit, ...state,];
+            return [...state, newTuit];
         case FIND_ALL_TUITS:
             return action.tuits;
         case DELETE_TUIT:
             return state.filter(tuit => tuit._id !== action.tuit._id);
         case CREATE_TUIT:
-            return [action.newTuit,...state];
+            return [...state, action.newTuit];
         case UPDATE_TUIT:
             return state.map(
                 tuit => tuit._id === action.tuit._id ?
